@@ -13,3 +13,9 @@ python3 main.py
 The results will be stored in rating.csv, it is up to you to decide in which (and how many) stocks you want to invest.
 Note that in the OON-Börsenspiel only a small size of possible stocks are available (see symbols.csv).
 This might lead to the formula not working as well as expected.
+
+## Functionality
+### APIs used to get data
+First of all yfinance is used to get daily adjusted close prices from Yahoo Finance. Secondly a simple web scraper fetches total yield data for a given symbol from https://www.gurufocus.com/. All the calculations needed can be done with these two data points.
+### Calculations
+A Pandas Dataframe is being filled in each step of the execution. For the specific calculations such as the Momentum, numpy is used to get more accurate results.
