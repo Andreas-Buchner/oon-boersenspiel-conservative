@@ -34,9 +34,6 @@ def main():
     df['Ranking'] = df.index + 1
 
     print(df)
-
-    print("\n\nTHE WINNNERS ARE:")
-    print(df[:20])
     df.to_csv("rating.csv", index=False)
 
 
